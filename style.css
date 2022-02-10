@@ -1,0 +1,41 @@
+*,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: lightpink;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 500px;
+  background-color: #f1f1fa;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.box {
+  padding: 40px;
+  margin: 25px auto;
+  background-color: grey;
+  max-width: 200px;
+  transition: all .3s linear;
+}
+
+.box:nth-child(2n){
+  transform: translateX(300%);
+}
+
+.box:nth-child(2n+1){
+  transform: translateX(-300%);
+}
+
+.box.visible {
+  display: block;
+  transform: translateX(0);
+}
